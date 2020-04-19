@@ -1,0 +1,19 @@
+{
+  "name": "curriculo",
+  "version": "1.0.0",
+  "description": "My CV in a Web App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "curriculum",
+    "vitae"
+  ],
+  "author": "Pedro Afonso",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,47 @@
+1. Initiate with "npm init"
+
+2. Install EXPRESS framework with "npm install express"
+
+3. Create the main file "index.js"
+
+4. Write the "default" code in index.js:
+
+        const express = require('express')
+        const app = express()
+
+        app.get('/', (request, response) => {
+            console.log(new Date)
+            response.send('<h1>HELOOOOOOW</h1>')
+        })
+
+        app.listen(3000, (err) => {
+            if (err) {
+                console.log('It was not possible to initiate Jobify server.')
+            } else {
+                console.log('Jobify server running...')
+            }
+        })
+
+5. Install EJS (template language, to separate JS and HTML in different files) with "npm install ejs"
+
+6. Create folder "views" and the files "home.ejs" inside it
+
+7. Create folder "public/images" and put logo.png inside
+
+8. Added line "app.use(express.static('public'))" to tell the app to look in the public folder if it does not find anything in /
+
+9. Create "estilos.css" inside "public" and reference it in "home.ejs" with  <link rel="stylesheet" href="estilos.css">
+
+10. Separate header and footer into two files inside "puclic" and use <%- include('header or footer') %> on the pages
+
+------------------------
+
+ROUTES AND DATABASES
+
+SQLite - Self Contained, relational database
+npm install sqlite
+
+Install the SQLite extension
+
+Install a parser to understand a body requisition: npm install body-parser
+Obs: parser understand something
